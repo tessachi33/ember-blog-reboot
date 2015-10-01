@@ -1,4 +1,20 @@
 import Ember from 'ember';
 
+var posts = [{
+  id: 1,
+  title: "Best hair",
+  content: "This is such a great hair color, how can I get this?",
+  image: "http://puiur.net/wp-content/uploads/2014/06/best-red-hair-color-for-pale-skin.jpg"
+}, {
+  id: 2,
+  title: "Wow, shoes",
+  content: "San Francisco",
+  image: "http://media-cache-ak0.pinimg.com/originals/78/60/d5/7860d5c54ee1e943faed1e11b36465d8.jpg"
+},
+}];
+
 export default Ember.Route.extend({
+  model() {
+    return posts;
+  },
 });
