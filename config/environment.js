@@ -2,8 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'reboot-ember-blog',
+    modulePrefix: 'super-rentals',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://crackling-heat-1879.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -12,7 +14,6 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
